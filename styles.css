@@ -1,3 +1,5 @@
+@import url('modal.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +8,10 @@
     scroll-behavior: smooth;
   }
 
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+  
 .navbar {
   background: #ffe5d9;
   height: 80px;
@@ -334,12 +340,12 @@
     }
   
     .hero__content h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-top: 2rem;
     }
   
     .hero__content h2 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   
     /* .hero__content p {
@@ -378,7 +384,7 @@
   }
 /* Our Story Section */
 .main {
-    background-color: #fdf3ac;
+    background-color: #ffe5d9;
     padding: 5rem 0;
   }
   
@@ -402,6 +408,7 @@
   
   .main__content h1 {
     font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ffb199 0%, #ff0844 50%);
     background-size: 100%;
@@ -409,12 +416,11 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
     }
   
   .main__content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: #ff8177; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,#b721ff,#21d4fd); /* Chrome 10-25, Safari 5.1-6 */
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
@@ -427,53 +433,10 @@
   
   .main__content p {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    color:#003049
-  }
-  
-  .main__btn {
-    font-size: 1.8rem;
-    /* background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); */
-    background: #0892a5;  /* fallback for old browsers */
-    color: #fff;
-    padding: 20px 60px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-  }
-  
-  .main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #ff1ead;
-    transition: all 0.35s;
-    border-radius: 4px;
-  }
-  
-  .main__btn:hover {
-    color: #fff;
-  }
-  
-  .main__btn:hover:after {
-    width: 100%;
+    color:#003049;
+    text-align: justify;
   }
   
   .main__img--container {
@@ -481,7 +444,7 @@
   }
   
   .main__img--card {
-    margin: 10px;
+    margin-left: 50px;
     height: 500px;
     width: 500px;
     border-radius: 4px;
@@ -492,11 +455,6 @@
     /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
   }
     
-  #card-2 {
-    background: #ff512f;
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-    background: linear-gradient(to right, #dd2476, #ff512f);
-  }
   
   /* Mobile Responsive */
   @media screen and (max-width: 1100px) {
@@ -526,18 +484,18 @@
     }
   
     .main__content h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-top: 2rem;
     }
   
     .main__content h2 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   
-    /* .main__content p {
+    .main__content p {
       margin-top: 1rem;
       font-size: 1.5rem;
-    } */
+    } 
   }
   
   @media screen and (max-width: 480px) {
@@ -559,13 +517,99 @@
       font-size: 2rem;
     }
   
-    /* .main__content p {
+    .main__content p {
       margin-top: 2rem;
-    } */
+    } 
   
     .main__btn {
       padding: 12px 36px;
       margin: 2.5rem 0;
     }
-  }
+}
+ 
+/* FAQs section */
+
+.faq {
+  background: #ffe5d9;
+  padding: 4rem 0;
+}
+.faq__content {
+  color: #003049;
+  width: 100%;
+}
+
+.faq__heading {
+  font-size: 3rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ffb199 0%, #ff0844 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1400px;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.hr-line{
+  width: 60%;
+  margin: auto;
   
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq__page {
+  background-color: #ffe5d9;
+  color: #3c3b3b;
+  cursor: pointer;
+  padding: 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+
+.faq__body{
+  margin: auto;
+  /* text-align: center; */
+ width: 55%; 
+ padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq__page:hover {
+    background-color: #fbc9b2;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq__body {
+    padding: 5px 0px;
+    background-color: #ffe5d9;
+    display: none;
+    overflow: hidden;
+}
+
+.faq__page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    /* font-size: 15px; Inherit */
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}

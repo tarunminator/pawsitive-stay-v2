@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawsitive Stay</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar Section -->
@@ -27,10 +28,10 @@
             <a href="#our-story" class="navbar__links" id="our-story-page">Our Story</a>
           </li>
           <li class="navbar__item">
-            <a href="#FAQs" class="navbar__links" id="FAQs-page">FAQs</a>
+            <a href="#faqs" class="navbar__links" id="faqs-page">FAQs</a>
           </li>
           <li class="navbar__btn">
-            <a href="#jtp" class="button" id="jtp-page">Join The Pack</a>
+            <a href="#" class="button" id="jtp-page">Join The Pack</a>
           </li>
         </ul>
       </div>
@@ -57,7 +58,8 @@
       <div class="main__container">
         <div class="main__content">
           <h1>Our Story</h1>
-          <p>👋 This lovely pupper is Cuddles. <br><br>
+          <h2>👋 This lovely pupper is Cuddles.</h2>
+          <p>
             When I adopted Cuddles, a pitbull, I quickly realized that it was almost impossible to find a dog boarding business that would accept her. Many places had breed restrictions or simply refused to take pitbulls, leaving me with few options when I needed to go on a trip. It was a constant struggle to find someone I trusted to take care of Cuddles while I was away.<br><br>
             I started Pawsitive Stay as a Facebook group with 3 members - myself and two other pet owners who were also struggling to find places for their pets to stay. Our goal was to foster each other's pets when someone had to go away. As word spread, more and more people joined our group. Before we knew it, we had a close-knit community of 150 pet parents who were all willing to open up their homes to each other's pets.<br><br>
             Pawsitive Stay has now graduated from a Facebook group to a not for profit business, with the same mission of connecting loving pet parents with couches and kennels for their furry friends while they are away. And best of all, we will always be a FREE SERVICE, so that everyone can benefit from the loving care and support of our community. If you're tired of the stress and worry of finding a safe and welcoming place for your pet to stay, join the Pawsitive Stay family today and give your pet the love and care they deserve while you're away.
@@ -70,7 +72,81 @@
         </div>
       </div>
     </div> 
-    
+  
+    <!-- FAQs Section -->
+    <div class="faq" id="faqs">
+      <div class="faq__content">
+        <h1 class="faq__heading">Pawsitive Stay FAQ</h1>
+          <section class="faq__container">
+            <div>
+              <!-- faq question -->
+              <h1 class="faq__page">How does Pawsitive Stay work?</h1>
+
+              <!-- faq answer -->
+              <div class="faq__body">
+                <p>Pawsitive Stay is a platform that connects like-minded individuals who are willing to open their homes to each other's pets and provide a safe and welcoming environment for them. 
+                  <br>Unlike traditional pet boarding services, Pawsitive Stay is free. 
+                  <br>Once you become a member, you can offer a couch, spare room, or kennel to other pets in need. When you need to go away, you can search for available accommodations within the Pawsitive Stay community and choose the one that best fits your needs.
+                  <br>All members of the Pawsitive Stay community are pet owners themselves, so they understand the importance of caring for someone else's pet as if it were their own. 
+                </p>
+              </div>
+            </div>
+            <hr class="hr-line">
+            <div>
+              <!-- faq question -->
+              <h1 class="faq__page">* How do I join Pawsitive Stay?</h1>
+              
+              <!-- faq answer -->
+              <div class="faq__body">
+                <p>Pawsitive Stay is a platform that connects like-minded individuals who are willing to open their homes to each other's pets and provide a safe and welcoming environment for them. Unlike traditional pet boarding services, Pawsitive Stay is free. Once you become a member, you can offer a couch, spare room, or kennel to other pets in need. When you need to go away, you can search for available accommodations within the Pawsitive Stay community and choose the one that best fits your needs.All members of the Pawsitive Stay community are pet owners themselves, so they understand the importance of caring for someone else's pet as if it were their own.</p>
+              </div>
+            </div>
+            <hr class="hr-line">
+            <div>
+              <!-- faq question -->
+              <h1 class="faq__page">How does Pawsitive Stay work?</h1>
+              
+              <!-- faq answer -->
+              <div class="faq__body">
+                <p>Pawsitive Stay is a community of pet owners who offer their couches and kennels to each other's pets when someone has to go away. It's a free service, and the goal is to provide a safe and welcoming place for pets to stay while their owners are away.</p>
+              </div>
+            </div>
+            <hr class="hr-line">
+          </section>
+      </div>
+    </div>
+
+    <!-- Join The Pack(jtp) section -->
+    <div class="modal" id="jtp-modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+        <!-- left section -->
+        <div class="modal-content-left">
+          <img id="modal-img" src="assets/jtp-modal-left.svg" alt="">
+        </div>
+
+        <div class="modal-content-right">
+          <form action="/" method="GET" class="modal-form" id="form">
+            <h1>Join The Pack!</h1>
+            <div class="form-validation">
+              <input type="text" class="modal-input" id="name" name="name" 
+                placeholder="Enter your name">
+              <p>Error Message</p>
+            </div>
+            <div class="form-validation">
+              <input type="email" class="modal-input" id="email" name="email" 
+               placeholder="Enter your email">
+              <p>Error Message</p>
+            </div>
+
+            <input type="submit" class="modal-input-btn" value="Submit">
+
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
