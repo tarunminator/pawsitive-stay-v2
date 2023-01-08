@@ -19,10 +19,10 @@
     /* display: none; */
 }
 
-.modal-content{
+.modal__content{
     background: #f4f4f4;
     margin: 10% auto;
-    width: 60%;
+    width: 80%;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     border-radius: 3px;
@@ -31,7 +31,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.close-btn {
+.close__btn {
     position: absolute;
     top: 2%;
     right:3%;
@@ -39,13 +39,13 @@
     z-index: 1;
 }
 
-.close-btn:hover{
+.close__btn:hover{
     cursor: pointer;
     color: blue;
     transition: 0.2 ease-out;
 }
 
-.modal-content-left{
+.modal__contentLeft{
     background: linear-gradient(90deg, rgba(247, 74, 70, 1) 0%, rgba(236, 43, 0, 1) 100%);
     border-radius: 0 3px 3px 0;
     position: relative;
@@ -60,12 +60,12 @@
     transform: translate(-50%, -50%);
 }
 
-.modal-content-right{
+.modal__contentRight{
     border-radius: 0 3px 3px 0;
     position: relative;
 }
 
-.modal-form{
+.modal__form{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,33 +78,33 @@
     align-items: center;
 }
 
-.modal-form h1 {
+.modal__form h1 {
     font-size: 1rem;
     text-align: center;
     width: 80%;
     margin-bottom: 1rem;
 }
 
-.form-validation {
+.form__validation {
     margin-bottom: 0.5rem;
     width: 80%;
 }
 
-.form-validation.error{
+.form__validation.error{
     margin-bottom: 1.5rem;
     position: relative;
     border:1px solid var(--errorColor);
     border-radius: 2px;
 }
 
-.form-validation.valid{
+.form__validation.valid{
     margin-bottom: 0.5rem;
     position: relative;
     border: 1px solid var(--validColor);
     border-radius: 2px;
 }
 
-.form-validation p{
+.form__validation p{
     font-size: 0.7 rem;
     margin-top: 0.5rem;
     color: var(--errorColor);
@@ -113,11 +113,11 @@
     display: none;
 }
 
-.form-validation.error p{
+.form__validation.error p{
     display: block;
 }
 
-.modal-input{
+.modal__input{
     display: block;
     padding-left: 0.5rem;
     outline: none;
@@ -128,33 +128,33 @@
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05)
 }
 
-.modal-input::placeholder{
+.modal__input::placeholder{
     color: var(--lightgray);
 }
 
-.modal-input-btn{
+.modal__inputBtn{
     width: 80%;
     height: 2rem;
     border-radius: 2px;
     background-color: var(--buttoncolor);
     outline: none;
     border: none;
-    color: #003049;
+    color: #f4f4f4;
     font-size: 1rem;
 }
 
-.modal-input-btn:hover{
+.modal__inputBtn:hover{
     cursor: pointer;
     background-color: var(--buttonactivecolor);
     transition: all 0.4s ease-out;   
 }
 
 @media screen and (max-width: 768px){
-    .modal-content-left{
+    .modal__contentLeft{
         display: none;
     }
 
-    .modal-content{
+    .modal__content{
         grid-template-columns: auto;
         margin: 15% auto;
         width: 70%;
@@ -164,7 +164,7 @@
 
 media screen and (max-width: 580px){
 
-    .modal-content{
+    .modal__content{
         grid-template-columns: auto;
         margin: 20% auto;
         width: 90%;

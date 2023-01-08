@@ -531,7 +531,7 @@
 
 .faq {
   background: #ffe5d9;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 .faq__content {
   color: #003049;
@@ -558,6 +558,7 @@
   max-width: 1400px;
   height: 90%;
   margin: 0 auto;
+
 }
 
 .hr-line{

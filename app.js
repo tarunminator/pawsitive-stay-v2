@@ -24,7 +24,7 @@ const highlightMenu = () => {
       homeMenu.classList.add('highlight');
       ourStoryMenu.classList.remove('highlight');
       return;
-    } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    } else if (window.innerWidth > 960 && scrollPos < 1420) {
       ourStoryMenu.classList.add('highlight');
       homeMenu.classList.remove('highlight');
       faqsMenu.classList.remove('highlight');
@@ -56,7 +56,6 @@ menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
 
-
 var faq = document.getElementsByClassName("faq__page");
 var i;
 
@@ -80,7 +79,7 @@ for (i = 0; i < faq.length; i++) {
 const modal = document.getElementById('jtp-modal');
 const openNavBtn = document.querySelector('.navbar__btn');
 const openHeroBtn = document.querySelector('.hero__btn');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtn = document.querySelector('.close__btn');
 
 // Click events
 openNavBtn.addEventListener('click', () => {
@@ -104,11 +103,12 @@ window.addEventListener('click', (e) => {
 const form = document.getElementById('form');
 const formName = document.getElementById('name');
 const email = document.getElementById('email');
+const reference = document.getElementById('reference');
 
 //Show Error message
 function showError(input, message){
   const formValidation = input.parentElement;
-  formValidation.className = 'form-validation error';
+  formValidation.className = 'form__validation error';
 
   const errorMessage = formValidation.querySelector('p');
   errorMessage.innerText = message;
@@ -117,7 +117,7 @@ function showError(input, message){
 //Show valid message
 function showValid(input){
   const formValidation = input.parentElement;
-  formValidation.className = 'form-validation valid';
+  formValidation.className = 'form__validation valid';
 }
 
 //Check required fields
@@ -140,6 +140,5 @@ function getFieldName(input){
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  checkRequired([formName, email]);
-
+  checkRequired([formName, email, reference]);
 })
